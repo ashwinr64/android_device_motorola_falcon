@@ -29,8 +29,7 @@ BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mkbootimg.mk
 TARGET_KERNEL_CONFIG := falcon_defconfig
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := $(LOCAL_PATH)/init/init_falcon.c
+TARGET_INIT_VENDOR_LIB := libinit_falcon
 TARGET_UNIFIED_DEVICE := true
 
 # Partitions
