@@ -57,6 +57,9 @@ TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
 BOARD_HAS_NO_REAL_SDCARD := true
 RECOVERY_SDCARD_ON_DATA := true
 HAVE_SELINUX := true
+TW_DISABLE_TTF := true
+TW_NO_EXFAT_FUSE := true
+TW_EXCLUDE_ENCRYPTED_BACKUPS := true
 
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab
