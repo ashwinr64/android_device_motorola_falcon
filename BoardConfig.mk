@@ -41,25 +41,5 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 5930614784
 # Recovery
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.qcom
 
-#TWRP
-RECOVERY_VARIANT := twrp
-DEVICE_RESOLUTION := 720x1280
-RECOVERY_GRAPHICS_USE_LINELENGTH := true
-TW_TARGET_USES_QCOM_BSP := true
-TW_SCREEN_BLANK_ON_BOOT := true
-TW_IGNORE_MAJOR_AXIS_0 := true
-TW_INCLUDE_CRYPTO := true
-TW_NO_USB_STORAGE := false
-#TW_NO_SCREEN_TIMEOUT := true
-#TW_NO_SCREEN_BLANK := true
-TW_INTERNAL_STORAGE_PATH := "/data/media"
-TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
-BOARD_HAS_NO_REAL_SDCARD := true
-RECOVERY_SDCARD_ON_DATA := true
-#HAVE_SELINUX := true
-
-PRODUCT_COPY_FILES += \
-$(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab
-
 # inherit from the proprietary version
 -include vendor/motorola/falcon/BoardConfigVendor.mk
