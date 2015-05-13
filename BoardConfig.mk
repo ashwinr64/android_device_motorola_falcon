@@ -29,7 +29,7 @@ BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mkbootimg.mk
 TARGET_KERNEL_CONFIG := falcon_defconfig
 
 #Qcom Hardware Variant
-TARGET_QCOM_AUDIO_VARIANT := caf-bfam
+TARGET_QCOM_AUDIO_VARIANT := caf
 TARGET_QCOM_DISPLAY_VARIANT := caf-bfam
 TARGET_QCOM_MEDIA_VARIANT := caf-bfam
 
